@@ -42,8 +42,6 @@ function genUpdate(tablename, obj, properties) {
           values.push(prop + "=?");
           arr.push(val);
         }
-
-
       }
     }
   }
@@ -244,7 +242,6 @@ function transaction(queries, queryValues, connection) {
         });
     })
     .catch(err => {
-      console.log(err)
       return connection.rollbackAsync()
         .then(connection.endAsync())
         .then(() => {

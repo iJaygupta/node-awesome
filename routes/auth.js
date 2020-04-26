@@ -1,11 +1,9 @@
 var express = require("express");
-const AuthController = require("../controllers/AuthController");
+const AuthController = require("../controllers/ProviderController");
 
 var router = express.Router();
 
-router.get("/register", AuthController.register);
-router.post("/login", AuthController.login);
-router.post("/verify-otp", AuthController.verifyConfirm);
-router.post("/resend-verify-otp", AuthController.resendConfirmOtp);
+router.get("/list", AuthController.listServiceProvider);
+
 
 module.exports = router;

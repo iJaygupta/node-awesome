@@ -1,5 +1,5 @@
 var express = require("express");
-const app =express();
+const app = express();
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
@@ -28,7 +28,7 @@ app.use("/api/", apiRouter);
 
 // throw 404 if URL not found
 app.all("*", function (req, res) {
-    return apiResponse.notFoundResponse(res, "Page not found");
+    res.json("Page not found");
 });
 
 app.use((err, req, res) => {
