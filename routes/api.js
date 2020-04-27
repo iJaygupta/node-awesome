@@ -1,8 +1,8 @@
 var express = require("express");
-var authRouter = require("./auth");
+var providerRouter = require("./provider");
 
 var app = express();
 
-app.use("/provider/", authRouter);
+app.use("/provider/", providerRouter);
 
 module.exports = app;
