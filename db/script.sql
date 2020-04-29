@@ -22,3 +22,6 @@ CREATE TABLE `provider` (
 
 
 -- ALTER TABLE `distributor_purchases` ADD `is_active` INT NOT NULL DEFAULT '0' AFTER `created_at`;
+
+
+-- Run ==>> sudo mysql  db_dev < script.sql
