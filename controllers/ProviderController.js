@@ -40,7 +40,7 @@ exports.listServiceProvider = (request, response) => {
     let countResult = DBHelper.getSql(connection, countQuery);
 
     if (searchKeyword) {
-        query += `where name like '%${searchKeyword}%' or description like '%${searchKeyword}%' or email like '%${searchKeyword}%'`;
+        query += `where name like '%${searchKeyword}%' or description like '%${searchKeyword}%' or lowest_price like '%${searchKeyword}%'`;
     }
 
     if (sortBy && orderBy) {
