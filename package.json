@@ -3,22 +3,28 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iJaygupta/node-awesome.git"
   },
   "author": "Jay",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iJaygupta/node-awesome/issues"
+  },
+  "homepage": "https://github.com/iJaygupta/node-awesome#readme",
   "dependencies": {
-    "bcrypt": "^4.0.1",
-    "chai": "^4.2.0",
-    "chai-http": "^4.3.0",
-    "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "express-validator": "^6.4.0",
-    "jsonwebtoken": "^8.5.1",
-    "morgan": "^1.10.0",
     "mysql": "^2.18.1",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.3"
   }
 }
