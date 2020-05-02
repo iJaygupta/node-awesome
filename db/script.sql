@@ -12,7 +12,7 @@ CREATE TABLE `provider` (
   `contact_number` varchar(15) NOT NULL,
   `image` varchar(24) NULL,
   `url` varchar(50)  NULL,
-  `created_at` timestamp NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`provider_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
